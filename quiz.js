@@ -1,0 +1,1 @@
+document.getElementById('quiz-container').innerHTML = "<p>Quiz system will be implemented here.</p>";
