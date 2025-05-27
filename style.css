@@ -1,1 +1,25 @@
-body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f9ff;
+  color: #222;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #007acc;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #005f99;
+}
+a:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><title>Index</title></head>
-<body><h1>Welcome to DmcQuiz</h1></body>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>DmcQuiz - হোম</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌟 DmcQuiz ওয়েবসাইটে স্বাগতম 🌟</h1>
+  <p>একটি সাবজেক্ট নির্বাচন করুন:</p>
+  <ul id="subject-list"></ul>
+
+  <script>
+    const subjects = [
+      "Biology 1st", "Biology 2nd", "Chemistry 1st", "Chemistry 2nd",
+      "Physics 1st", "Physics 2nd", "English", "General Knowledge", "ICT"
+    ];
+    const subjectList = document.getElementById('subject-list');
+    subjects.forEach(subject => {
+      const li = document.createElement('li');
+      const link = subject.toLowerCase().replaceAll(' ', '_');
+      li.innerHTML = `<a href="subjects/${link}/index.html">${subject}</a>`;
+      subjectList.appendChild(li);
+    });
+  </script>
+</body>
 </html>
